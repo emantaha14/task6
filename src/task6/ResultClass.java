@@ -2,8 +2,7 @@ package task6;
 
 public class ResultClass {
     private boolean isValid = false;
-    private String message ;
-    public boolean test =false;
+    private String message;
 
     public boolean getValid() {
         return isValid;

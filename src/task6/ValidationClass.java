@@ -18,16 +18,15 @@ public class ValidationClass {
         Pattern pat = Pattern.compile(emailRegex);
         if (email.equals(emptyEmail)) {
             result1.setValid(false);
-            System.out.println("please enter the email it shouldn't be empty");
+            result1.setMessage("please enter the email it shouldn't be empty");
         }
         else {
             if(pat.matcher(email).matches()) {
                 result1.setValid(true);
-                result1.test=true;
             }
             else {
                 result1.setValid(false);
-                System.out.println("please try again the email must have @ letter");
+                result1.setMessage("please try again the email must have @ letter");
             }
         }
         return result1;
@@ -44,7 +43,8 @@ public class ValidationClass {
                         chPass = pass.charAt(i);
                         if (Character.isUpperCase(chPass)) {
                             result2.setValid(true);
-                            System.out.println("they have signed up");
+                            result2.setMessage("they have signed up");
+                            break;
                         }
                         else {
                             result2.setValid(false);
