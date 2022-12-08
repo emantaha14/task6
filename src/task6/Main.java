@@ -1,5 +1,6 @@
 package task6;
 
+import javax.print.DocFlavor;
 import java.util.Scanner;
 
 public class Main {
@@ -8,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         ValidationClass obj = new ValidationClass();
-        ResultClass obj2 = new ResultClass();
+        ResultClass result1 = new ResultClass();
+        ResultClass result2 = new ResultClass();
 //
 //
 //        }
@@ -16,8 +18,8 @@ public class Main {
             System.out.println("enter the email");
             String email = sc.nextLine();
             obj.validationEmail(email);
-            System.out.println(obj2.getValid());
-        }while (obj2.getValid());
+            System.out.println(result1.getValid());
+        }while (result1.getValid());
         System.out.println("enter the password");
             String pass = sc.nextLine();
             obj.validationPassword(pass);

@@ -5,9 +5,10 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class ValidationClass {
-     static ResultClass obj = new ResultClass();
+
 
     public  ResultClass validationEmail(String email) {
+        ResultClass result1 = new ResultClass();
         String emptyEmail = "";
         String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
                 "[a-zA-Z0-9_+&*-]+)*@" +
@@ -16,46 +17,47 @@ public class ValidationClass {
 
         Pattern pat = Pattern.compile(emailRegex);
         if (email.equals(emptyEmail)) {
-            obj.setValid(false);
+            result1.setValid(false);
             System.out.println("please enter the email it shouldn't be empty");
         }
         else {
             if(pat.matcher(email).matches()) {
-                obj.setValid(true);
-                obj.test=true;
+                result1.setValid(true);
+                result1.test=true;
             }
             else {
-                obj.setValid(false);
+                result1.setValid(false);
                 System.out.println("please try again the email must have @ letter");
             }
         }
-        return obj;
+        return result1;
     }
     public static ResultClass validationPassword(String pass) {
+        ResultClass result2 = new ResultClass();
             String emptyPass = "";
             if (pass.equals(emptyPass)) {
-               obj.setMessage("please enter the password it mustn't be empty");
+               result2.setMessage("please enter the password it mustn't be empty");
             } else {
                 if (pass.length() >= 8 && pass.length() <= 20) {
                     char chPass;
                     for (int i = 0; i < pass.length(); i++) {
                         chPass = pass.charAt(i);
                         if (Character.isUpperCase(chPass)) {
-                            obj.setValid(true);
+                            result2.setValid(true);
                             System.out.println("they have signed up");
                         }
                         else {
-                            obj.setValid(false);
-                            obj.setMessage("not validate tha pass must have at least one capital letter");
+                            result2.setValid(false);
+                            result2.setMessage("not validate tha pass must have at least one capital letter");
                         }
 
                     }
                 } else {
-                    obj.setValid(false);
-                    obj.setMessage("not validate the pass must be greater than 8 and less than 20!");
+                    result2.setValid(false);
+                    result2.setMessage("not validate the pass must be greater than 8 and less than 20!");
                 }
             }
 
-        return obj ;
+        return result2 ;
     }
 }

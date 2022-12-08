@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e591b7b3-1aa1-4e85-97b9-1d46d0f1213d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e591b7b3-1aa1-4e85-97b9-1d46d0f1213d" name="Changes" comment="task6">
       <change beforePath="$PROJECT_DIR$/src/task6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task6/ValidationClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task6/ValidationClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670448385229</updated>
     </task>
+    <task id="LOCAL-00001" summary="task6">
+      <created>1670508566584</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670508566584</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,5 +86,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="task6" />
+    <option name="LAST_COMMIT_MESSAGE" value="task6" />
   </component>
 </project>
